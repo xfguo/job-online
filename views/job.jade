@@ -201,6 +201,11 @@ html
           .span12
             p.pull-right Admin Theme by Nathan Speller
             p © Copyright 2013 FreelanceLeague
+  script(src='seajs/sea.js')
+  script
+    seajs.config('job-apply/config');
+    seajs.use('job-apply/main');
+
   script(src='javascripts/d3-setup.js')
   script
     protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://'; address = protocol + window.location.host + window.location.pathname + '/ws'; socket = new WebSocket(address);
