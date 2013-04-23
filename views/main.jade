@@ -3,6 +3,8 @@ extends job-layout
 block page-content
     .span12.header 
         h4 职位申请
+        p
+            | 你可以直接发送简历至 jobs@credosemi.com ，但是如果填写以下表单将会加速整个面试流程的进行
 
     block resume
         .span6
@@ -55,3 +57,7 @@ block page-content
                     label.control-label(for='inputResume') 正式简历
                     .controls
                         input#inputResume(type='file')
+                .control-group
+                    .controls
+                        button.btn(type='submit') 提交
+
