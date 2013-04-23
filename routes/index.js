@@ -4,6 +4,6 @@
  */
 
 exports.index = function(req, res){
-  res.render('job', { title: 'Express' });
+  res.render('main', { title: 'Express' });
 };
 

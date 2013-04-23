@@ -1,7 +1,32 @@
 doctype 5
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    head
+        meta(charset='utf8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+        meta(name='description', content='description of your site')
+        meta(name='author', content='author of the site')
+        title IndustryApp Template
+        link(rel='stylesheet', href='stylesheets/bootstrap.css')
+        link(rel='stylesheet', href='stylesheets/bootstrap-responsive.css')
+        link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic')
+        link(rel='stylesheet', href='stylesheets/styles.css')
+        link(rel='stylesheet', href='stylesheets/toastr.css')
+        link(rel='stylesheet', href='stylesheets/fullcalendar.css')
+        script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
+        script(src='javascripts/bootstrap.js')
+        script(src='javascripts/jquery.knob.js')
+        script(src='http://d3js.org/d3.v3.min.js')
+        script(src='javascripts/jquery.sparkline.min.js')
+        script(src='javascripts/toastr.js')
+        script(src='javascripts/jquery.tablesorter.min.js')
+        script(src='javascripts/jquery.peity.min.js')
+        script(src='javascripts/fullcalendar.min.js')
+        script(src='javascripts/gcal.js')
+        script(src='javascripts/setup.js')
+
   body
-    block content
+        block in-nav
+        block in-sub-nav
+        block page
+        block footer
+  

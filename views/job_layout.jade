@@ -1,0 +1,78 @@
+extends layout 
+
+block in-nav
+    #in-nav
+      .container
+        .row
+          .span12
+            ul.pull-right
+              li
+                a(href='#') Link1
+              li
+                a(href='#') Link2
+              li
+                a(href='#') Link3
+              li
+                a(href='login.html') Login
+            a#logo(href='index.html')
+              h4
+                | My
+                strong Admin
+
+block in-sub-nav
+
+    #in-sub-nav
+      .container
+        .row
+          .span12
+            ul
+              li
+                a(href='index.html')
+                  i.batch.home
+                  br
+                  | Dashboard
+              li
+                span.label.label-important.pull-right 08
+                a(href='stream.html')
+                  i.batch.stream
+                  br
+                  | Stream
+              li
+                span.label.label-important.pull-right 04
+                a(href='messages.html')
+                  i.batch.plane
+                  br
+                  | Messages
+              li
+                a(href='calendar.html')
+                  i.batch.calendar
+                  br
+                  | Calendar
+              li
+                a(href='paragraphs.html')
+                  i.batch.quill
+                  br
+                  | Paragraphs
+              li
+                a(href='faq.html')
+                  i.batch.forms
+                  br
+                  | FAQ
+              li
+                a(href='users.html')
+                  i.batch.users
+                  br
+                  | Users
+              li
+                a.active(href='settings.html')
+                  i.batch.settings
+                  br
+                  | Settings
+ 
+
+block page
+    .page
+        .page-container
+            .container
+                .row
+                    block page-content
