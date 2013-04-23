@@ -23,10 +23,18 @@ html
         script(src='javascripts/fullcalendar.min.js')
         script(src='javascripts/gcal.js')
         script(src='javascripts/setup.js')
+        script(src='seajs/sea.js')
+        script
+            seajs.config('job-apply/config');
+            seajs.use('job-apply/main');
 
-  body
+    body
         block in-nav
         block in-sub-nav
         block page
         block footer
+    script(src='javascripts/d3-setup.js')
+    script
+        protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://'; address = protocol + window.location.host + window.location.pathname + '/ws'; socket = new WebSocket(address);
+        socket.onmessage = function(msg) { msg.data == 'reload' && window.location.reload() }
   
