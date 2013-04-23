@@ -7,6 +7,7 @@ Submit Resume, Filling out Questionnaire.
 
 ```
 npm install node-static
+npm install jade
 ```
 
 
