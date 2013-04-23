@@ -12,10 +12,10 @@ html
         link(rel='stylesheet', href='stylesheets/styles.css')
         link(rel='stylesheet', href='stylesheets/toastr.css')
         link(rel='stylesheet', href='stylesheets/fullcalendar.css')
-        script(src='seajs/sea.js')
+        script(src='seajs/sea-debug.js')
+        script(src='job-apply/config.js');
         script
-            seajs.config('job-apply/config');
-            seajs.use('job-apply/main');
+            seajs.use('job-apply/main.js');
 
     body
         block in-nav
