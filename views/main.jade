@@ -1,0 +1,19 @@
+extends job_layout
+
+block page-content
+    .span12.header 
+        h4 我的简历
+
+    block resume
+        .span6
+            form.form-horizontal
+                .control-group
+                    label.control-label(for="inputEmail") 应聘职位：
+                    .controls
+                        label.checkbox
+                            input(type="checkbox", value="#")
+                            | 开发工程师
+                        label.checkbox
+                            input(type="checkbox", value="#")
+                            | 测试工程师
+
