@@ -6,9 +6,21 @@ seajs.config({
   // Configure alias
   alias: {
     'jquery': {
-      src: 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js',
-      exports: 'jQuery'
+        src: 'lib/jquery-1.9.1.min.js',
+        exports: 'jQuery'
+    },
+
+    'underscore': {
+        src: 'lib/underscore.js',
+        exports: '_'
+    },
+
+    'backbone': {
+        src: 'lib/backbone.js',
+        deps: ['underscore', 'jquery'],
+        exports: 'Backbone'
     }
-  }
+ }
+
 });
 

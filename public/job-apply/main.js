@@ -1,4 +1,4 @@
-define(function(require, exports, module) {
-    console.log("job!job!job!");
+define(function(require){
+    var app = require('./views/app');
+    new app();
 });
-
