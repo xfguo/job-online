@@ -2,18 +2,57 @@ extends job-layout
 
 block page-content
     .span12.header 
-        h4 我的简历
+        h4 职位申请
 
     block resume
         .span6
             form.form-horizontal
                 .control-group
-                    label.control-label(for="inputEmail") 应聘职位：
+                    label.control-label 应聘职位
                     .controls
                         label.checkbox
-                            input(type="checkbox", value="#")
-                            | 开发工程师
+                            input#jobPos1(type="checkbox")
+                            | 嵌入式软件攻城狮
                         label.checkbox
-                            input(type="checkbox", value="#")
-                            | 测试工程师
+                            input#jobPos2(type="checkbox")
+                            | 固件开发攻城狮
+                        label.checkbox
+                            input#jobPos3(type="checkbox")
+                            | SoC平台开发攻城狮
+                .control-group
+                    label.control-label(for='inputName') 姓名
+                    .controls
+                        input#inputName(type='text', placeholder='姓名')
+                .control-group
+                    label.control-label(for='inputPhone') 手机
+                    .controls
+                        input#inputPhone(type='text', placeholder='手机')
+                .control-group
+                    label.control-label(for='inputEmail') Email
+                    .controls
+                        input#inputEmail(type='text', placeholder='Email')
+                .control-group
+                    label.control-label(for='inputSelfIntro') 自我介绍
+                    .controls
+                        textarea#inputSelfIntro
+                .control-group
+                    label.control-label(for='inputPrjExp') 做过什么东西
+                    .controls
+                        textarea#inputPrjExp
+                .control-group
+                    label.control-label(for='inputGithub') Github账号
+                    .controls
+                        input#inputGithub(type='text', placeholder='Github账号，其他在线开源平台亦可')
+                .control-group
+                    label.control-label(for='inputWeibo') 微博账号
+                    .controls
+                        input#inputWeibo(type='text', placeholder='微博账号，Twitter等其他亦可')
+                .control-group
+                    label.control-label(for='inputBlog') 博客账号
+                    .controls
+                        input#inputBlog(type='text', placeholder='博客账号，可填入多个')
+                .control-group
+                    label.control-label(for='inputResume') 正式简历
+                    .controls
+                        input#inputResume(type='file')
 
