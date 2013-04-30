@@ -13,15 +13,10 @@ block page-content
                 .control-group
                     label.control-label 应聘职位
                     .controls
-                        label.checkbox
-                            input#jobPos1(type="checkbox")
-                            | 嵌入式软件攻城狮
-                        label.checkbox
-                            input#jobPos2(type="checkbox")
-                            | 固件开发攻城狮
-                        label.checkbox
-                            input#jobPos3(type="checkbox")
-                            | SoC平台开发攻城狮
+                        each job, i in joblist
+                            label.checkbox
+                                input(type="checkbox", id="jobPos#{i+1}")
+                                | #{job}
                 .control-group
                     label.control-label(for='inputName') 姓名
                     .controls

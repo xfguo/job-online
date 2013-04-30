@@ -25,7 +25,9 @@ app.use express.static(path.join(__dirname, "public"))
 
 # development only
 app.use express.errorHandler()  if "development" is app.get("env")
+
 app.get "/", routes.index
 app.get "/users", user.list
+
 http.createServer(app).listen app.get("port"), ->
   console.log "Express server listening on port " + app.get("port")

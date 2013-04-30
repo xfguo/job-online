@@ -9,5 +9,11 @@ Submit Resume, Filling out Questionnaire.
 npm install
 ```
 
+## Test locally
+
+```
+npm start
+```
+
 
 
