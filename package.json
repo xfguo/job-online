@@ -3,10 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "coffee -w app.coffee"
   },
   "dependencies": {
-    "express": "3.2.0",
+    "coffee-script": "latest",
+    "express": "3.x",
     "jade": "*",
     "less-middleware": "*"
   }
