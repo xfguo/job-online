@@ -13,6 +13,8 @@ seajs.config
       src: "lib/underscore.js"
       exports: "_"
 
+    coffee: "lib/coffee-script"
+
     backbone:
       src: "lib/backbone.js"
       deps: ["underscore", "jquery"]
