@@ -1,4 +1,4 @@
-define(require, exports, module) ->
+define (require, exports, module) ->
     Backbone = require "backbone"
     ApplyModel = Backbone.View.extend
         defaults:
