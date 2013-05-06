@@ -13,10 +13,15 @@ seajs.config
       src: "lib/underscore.js"
       exports: "_"
 
-    coffee: "lib/coffee-script"
-
     backbone:
       src: "lib/backbone.js"
       deps: ["underscore", "jquery"]
       exports: "Backbone"
-      
+
+    engine_io:
+      src: "lib/engine.io-dev.js"
+
+    backbone_io:
+      src:  "lib/backbone.io.js"
+      deps: ["backbone", "engine_io"]
+

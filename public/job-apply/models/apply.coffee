@@ -1,6 +1,6 @@
 define (require, exports, module) ->
     Backbone = require "backbone"
-    ApplyModel = Backbone.View.extend
+    ApplyModel = Backbone.Model.extend
         defaults:
             name: '',
 

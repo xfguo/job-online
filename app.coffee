@@ -35,5 +35,13 @@ app.use express.errorHandler()  if "development" is app.get("env")
 app.get "/", routes.index
 app.get "/users", user.list
 
-http.createServer(app).listen app.get("port"), ->
-  console.log "Express server listening on port " + app.get("port")
+server = http.createServer(app)
+io = require("engine.io").attach(server)
+
+io.on  "connection", (socket) ->
+    socket.on "message", (v) ->
+        socket.send "pong"
+
+
+server.listen app.get("port"), ->
+    console.log "Express server listening on port " + app.get("port")

@@ -10,6 +10,7 @@
     "connect-coffee-script": "latest",
     "express": "3.x",
     "jade": "*",
-    "less-middleware": "*"
+    "less-middleware": "*",
+    "engine.io": "latest"
   }
 }
